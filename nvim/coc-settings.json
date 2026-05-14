@@ -1,0 +1,50 @@
+{
+  // Configuración para Python
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.analysis.autoImportCompletions": true,
+
+  // Configuración para Java
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.format.enabled": true,
+
+  // Configuración para Go
+  "go.formatTool": "gofmt",
+  "go.useLanguageServer": true,
+  "go.goplsOptions": {
+    "analyses": {
+      "unusedparams": true
+    },
+    "staticcheck": true
+  },
+
+  // Configuración para JavaScript y TypeScript
+  "javascript.suggest.enabled": true,
+  "typescript.suggest.enabled": true,
+  "javascript.format.enable": true,
+  "typescript.format.enable": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+
+
+  // Configuración para Prisma
+  "coc.preferences.formatOnSaveFiletypes": [ "prisma" ],
+
+
+  // Configuración EsLint
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
+//  "eslint.enable": true,
+//  "eslint.options": {
+//    "overrideConfigFile": ".eslintrc.json"
+//  }
+
+  "diagnostic.virtualText": true,
+  "diagnostic.signs": true,
+  "diagnostic.updateOnInsert": false,
+  "diagnostic.displayByAle": false
+}
+
