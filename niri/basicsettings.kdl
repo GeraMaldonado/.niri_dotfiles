@@ -64,7 +64,8 @@ input {
     // workspace-auto-back-and-forth
     mod-key "Super"
     
-    touchpad {        tap
+    touchpad {        off
+        tap
         // dwt
         // dwtp
         natural-scroll

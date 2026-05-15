@@ -1,0 +1,33 @@
+# Purple Dark Theme - Cohesive dark purple/violet color scheme
+
+[colors.primary]
+background = '#0a0e27'
+foreground = '#e8e8f0'
+
+[colors.cursor]
+cursor = '#a78bfa'
+text = '#0a0e27'
+
+[colors.normal]
+black = '#1a1d3a'
+red = '#f472b6'
+green = '#86efac'
+yellow = '#fbbf24'
+blue = '#60a5fa'
+magenta = '#d946ef'
+cyan = '#22d3ee'
+white = '#e8e8f0'
+
+[colors.bright]
+black = '#2d3561'
+red = '#f88bcc'
+green = '#a7f3d0'
+yellow = '#fcd34d'
+blue = '#93c5fd'
+magenta = '#e879f9'
+cyan = '#67e8f9'
+white = '#f3f4f6'
+
+[colors.selection]
+background = '#3d2c5f'
+text = '#e8e8f0'

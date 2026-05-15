@@ -43,13 +43,13 @@ add_newline = true
 # Second param
 [hostname]
 ssh_only = true 
-format = "[](fg:#252525 bg:none)[█](fg:#E8E3E3 bg:#252525)[$ssh_symbol$hostname](bold bg:#E8E3E3)[](fg:#E8E3E3 bg:none) "
+format = "[](fg:#0a0e27 bg:none)[█](fg:#e8e8f0 bg:#0a0e27)[$ssh_symbol$hostname](bold bg:#e8e8f0)[](fg:#e8e8f0 bg:none) "
 disabled = false
 
 # Third param
 [directory]
-format = "[](fg:#252525 bg:none)[$path]($style)[█](fg:#232526 bg:#232526)[](fg:#6791C9 bg:#252525)[ ](fg:#252525 bg:#6791C9)[](fg:#6791C9 bg:none)"
-style = "fg:#E8E3E3 bg:#252525 bold"
+format = "[](fg:#0a0e27 bg:none)[$path]($style)[█](fg:#2d3561 bg:#2d3561)[](fg:#a78bfa bg:#0a0e27)[ ](fg:#0a0e27 bg:#a78bfa)[](fg:#a78bfa bg:none)"
+style = "fg:#e8e8f0 bg:#0a0e27 bold"
 truncation_length = 3
 truncate_to_repo=false
 read_only = " "
@@ -57,31 +57,31 @@ read_only = " "
 ## SECOND LINE/ROW: Prompt
 # Prompt: param 2 └─
 [character]
-success_symbol = "[ ](#6791C9 bold)"
-error_symbol = "[ ](#B66467 bold)"
+success_symbol = "[ ](#a78bfa bold)"
+error_symbol = "[ ](#f472b6 bold)"
 
 [line_break]
 disabled = false
 
 [fill]
 symbol = ' '
-style = 'bold green'
+style = 'bold'
 
 [cmd_duration]
 min_time = 1
-format = "[](fg:#252525 bg:none)[$duration]($style)[](fg:#252525 bg:#252525)[](fg:#C397D8 bg:#252525)[󱑂 ](fg:#252525 bg:#C397D8)[](fg:#C397D8 bg:none)"
+format = "[](fg:#0a0e27 bg:none)[$duration]($style)[](fg:#0a0e27 bg:#0a0e27)[](fg:#d946ef bg:#0a0e27)[󱑂 ](fg:#0a0e27 bg:#d946ef)[](fg:#d946ef bg:none)"
 disabled = false
-style = "fg:#E8E3E3 bg:#252525 bold"
+style = "fg:#e8e8f0 bg:#0a0e27 bold"
 
 
 [git_branch]
-format = "[](fg:#252525 bg:none)[$branch]($style)[](fg:#252525 bg:#252525)[](fg:#81C19B bg:#252525)[](fg:#252525 bg:#81C19B)[](fg:#81C19B bg:none) "
-style = "fg:#E8E3E3 bg:#252525"
+format = "[](fg:#0a0e27 bg:none)[$branch]($style)[](fg:#0a0e27 bg:#0a0e27)[](fg:#60a5fa bg:#0a0e27)[](fg:#0a0e27 bg:#60a5fa)[](fg:#60a5fa bg:none) "
+style = "fg:#e8e8f0 bg:#0a0e27"
 symbol = " "
 
 [git_status]
-format="[](fg:#252525 bg:none)[$all_status$ahead_behind]($style)[](fg:#252525 bg:#252525)[](fg:#6791C9 bg:#252525)[ ](fg:#252525 bg:#6791C9)[](fg:#6791C9 bg:none) "
-style = "fg:#E8E3E3 bg:#252525"
+format="[](fg:#0a0e27 bg:none)[$all_status$ahead_behind]($style)[](fg:#0a0e27 bg:#0a0e27)[](fg:#86efac bg:#0a0e27)[ ](fg:#0a0e27 bg:#86efac)[](fg:#86efac bg:none) "
+style = "fg:#e8e8f0 bg:#0a0e27"
 conflicted = "="
 ahead =	"⇡${count}"
 behind = "⇣${count}"
@@ -96,7 +96,7 @@ deleted = " ${count}"
 
 [git_commit]
 format = "[\\($hash\\)]($style) [\\($tag\\)]($style)"
-style = "green"
+style = "#d946ef"
 
 [git_state]
 rebase = "REBASING"
@@ -174,7 +174,7 @@ symbol = " "
 symbol = " "
 #pyenv_version_name = true
 format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
-style = "bold yellow"
+style = "bold #d946ef"
 pyenv_prefix = "venv "
 python_binary = ["./venv/bin/python", "python", "python3", "python2"]
 detect_extensions = ["py"]
@@ -196,7 +196,7 @@ symbol = " "
 symbol = "ﯣ "
 
 [nodejs]
-format = "via [ Node.js $version](bold green) "
+format = "via [ Node.js $version](bold #60a5fa) "
 detect_files = ["package.json", ".node-version"]
 detect_folders = ["node_modules"]
 

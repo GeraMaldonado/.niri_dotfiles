@@ -2,19 +2,19 @@ gui:
   theme:
     lightTheme: false
     activeBorderColor:
-      - "#76b0e8" # Green
+      - "#a78bfa" # Purple
       - bold
     inactiveBorderColor:
-      - "#dadada" # Text
+      - "#e8e8f0" # Text
     optionsTextColor:
-      - "#e5c76b" # Blue
+      - "#fbbf24" # Yellow
     selectedLineBgColor:
-      - "#6cbfbf" # Surface0
+      - "#2d3561" # Dark purple
     selectedRangeBgColor:
-      - "#313244" # Surface0
+      - "#1a1d3a" # Darker
     cherryPickedCommitBgColor:
-      - "#c47fd5" # Teal
+      - "#d946ef" # Magenta
     cherryPickedCommitFgColor:
-      - "#dadada" # Blue
+      - "#e8e8f0" # White
     unstagedChangesColor:
-      - "#e57474"       # Red
+      - "#f472b6"       # Pink

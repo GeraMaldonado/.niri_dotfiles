@@ -19,6 +19,7 @@ call plug#begin('~/.vim/plugged')
 
 "Temas
 Plug 'sainnhe/gruvbox-material'
+Plug 'lunarvim/Oneday.nvim'
 "autocompletado
 "LSP y autocompletado
 Plug 'neovim/nvim-lspconfig'
@@ -61,14 +62,21 @@ let g:vimtex_view_method = 'zathura'
 let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 
-"Gruvbox configuracion
-"set background=dark
-let g:gruvbox_material_background='medium'
+"Gruvbox/Purple configuracion
+set background=dark
+let g:gruvbox_material_background='hard'
+let g:gruvbox_material_foreground='original'
 colorscheme gruvbox-material
-highlight Normal guibg=NONE ctermbg=NONE
-highlight NormalNC guibg=NONE ctermbg=NONE
+" Override with purple tones
+highlight Normal guibg=#0a0e27 guifg=#e8e8f0 ctermbg=235 ctermfg=15
+highlight NormalNC guibg=#0a0e27 guifg=#e8e8f0 ctermbg=235 ctermfg=15
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
 highlight SignColumn guibg=NONE ctermbg=NONE
+highlight LineNr guibg=#0a0e27 guifg=#2d3561 ctermbg=235 ctermfg=8
+highlight CursorLineNr guibg=#0a0e27 guifg=#a78bfa ctermbg=235 ctermfg=13
+highlight VertSplit guibg=#0a0e27 guifg=#2d3561 ctermbg=235 ctermfg=8
+highlight StatusLine guibg=#2d3561 guifg=#e8e8f0 ctermbg=8 ctermfg=15
+highlight StatusLineNC guibg=#1a1d3a guifg=#2d3561 ctermbg=0 ctermfg=8
 
 
 
