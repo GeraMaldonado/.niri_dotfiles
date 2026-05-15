@@ -24,7 +24,6 @@ layout {
   }
 
   focus-ring {
-    off
     width 2
     active-color "#7fc8ff"
     inactive-color "505050"
@@ -65,8 +64,7 @@ input {
     // workspace-auto-back-and-forth
     mod-key "Super"
     
-    touchpad {        off
-        tap
+    touchpad {        tap
         // dwt
         // dwtp
         natural-scroll
