@@ -1,0 +1,11 @@
+{
+  "custom/pomodoro": {
+    "exec": "~/.config/waybar/scripts/pomodoro.sh",
+    "return-type": "json",
+    "interval": 5,
+//    "on-click": "pomodoro start \"trabajo\" --duration 45",
+    "on-click": "pomodoro break",
+    "on-click-right": "pomodoro cancel",
+    "tooltip": true
+  }
+}

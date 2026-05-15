@@ -32,6 +32,7 @@
     "~/.config/waybar/modules/temperature.jsonc",
     "~/.config/waybar/modules/battery.jsonc",
     "~/.config/waybar/modules/backlight.jsonc"
+//    "~/.config/waybar/modules/pomodoro.jsonc"
 //    "~/.config/waybar/modules/idle_inhibitor.jsonc",
 //    "~/.config/waybar/modules/weather.jsonc",
 //    "~/.config/waybar/modules/updates.jsonc",
@@ -46,6 +47,7 @@
   ],
 
   "modules-center": [
+//    "custom/pomodoro",
     "custom/player",
     "clock"
   ],
