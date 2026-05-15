@@ -1,25 +1,18 @@
-/* ═══════════════════════════════════════════════════════════════════
- * Waybar Modern Flat Design - Solid Colors
- * ═══════════════════════════════════════════════════════════════════ */
-
-/* ───────── Global Styles ───────── */
 * {
   border: none;
   border-radius: 0;
   font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", monospace;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 400;
   min-height: 0;
 }
 
-/* ───────── Window ───────── */
 window#waybar {
-  background: transparent;
-  color: #c0caf5;
+  background: rgba(29, 11, 36, 0.8);
+  border-radius: 0px 0px 20px 20px;
   transition: none;
 }
 
-/* ───────── Common Module Styles ───────── */
 #custom-launcher,
 #workspaces,
 #clock,
@@ -48,7 +41,6 @@ window#waybar {
   margin: 1px 2px;
   background: rgba(20, 20, 20, 0.8);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease;
 }
@@ -79,28 +71,6 @@ window#waybar {
   padding-right: 8px;
 }
 
-/* Hover effects */
-#custom-launcher:hover,
-#custom-power:hover,
-#custom-clipboard:hover,
-#custom-notifications:hover,
-#bluetooth:hover,
-#custom-weather:hover,
-#custom-updates:hover,
-#idle_inhibitor:hover {
-  background: rgba(136, 192, 208, 0.3);
-  border: 1px solid rgba(136, 192, 208, 0.4);
-  box-shadow: 0 4px 12px rgba(136, 192, 208, 0.2);
-}
-
-/* ───────── Launcher ───────── */
-#custom-launcher {
-  color: #88c0d0;
-  font-size: 12px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
 /* ───────── Workspaces ───────── */
 #workspaces {
   padding: 0;
@@ -114,7 +84,7 @@ window#waybar {
   margin: 0 1px;
   color: #b79bec;
   background: rgb(22, 21, 21);
-  border-radius: 10px;
+  border-radius: 10px 15px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease;
@@ -125,7 +95,6 @@ window#waybar {
   background: rgb(22, 21, 21);
   color: #f29fff;
   border: 0.8px solid rgba(160, 44, 255, 0.908);
-  /* box-shadow: 0 0 10px rgba(203, 129, 255, 0.8); */
 }
 
 #workspaces button:hover {
@@ -150,16 +119,16 @@ window#waybar {
 }
 
 #custom-player.playing {
-  color: #bb9af7;
+  color: #008000;
   animation: pulse 2s infinite;
 }
 
 #custom-player.paused {
-  color: #bb9af7;
+  color: orange;
 }
 
 #custom-player.stopped {
-  color: #4c566a;
+  color: blue;
 }
 
 @keyframes pulse {
@@ -182,8 +151,8 @@ window#waybar {
 }
 
 #pulseaudio.muted {
-  color: #bf616a;
-  background: rgba(191, 97, 106, 0.1);
+  color: #BBAA99;
+  background: rgba(191, 97, 106, 0.6);
 }
 
 pulseaudio#microphone {
@@ -245,17 +214,17 @@ pulseaudio#microphone {
 
 #battery.charging, #battery.plugged {
   color: #88c0d0;
-  background: rgba(136, 192, 208, 0.1);
+  background: rgba(136, 192, 208, 0.2);
 }
 
 #battery.warning:not(.charging) {
   color: #bb9af7;
-  background: rgba(235, 203, 139, 0.1);
+  background: rgba(235, 203, 139, 0.4);
 }
 
 #battery.critical:not(.charging) {
   color: #bf616a;
-  background: rgba(191, 97, 106, 0.9);
+  background: rgba(191, 97, 106, 0.7);
   animation: blink 1s infinite;
 }
 
@@ -291,7 +260,6 @@ pulseaudio#microphone {
 
 #bluetooth.connected {
   color: #bb9af7;
-  /* background: rgba(163, 190, 140, 0.1); */
 }
 
 #bluetooth.off {
