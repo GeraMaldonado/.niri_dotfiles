@@ -1,6 +1,6 @@
 set number
-"set mouse=a
-syntax enable
+"set mouse=disable
+"syntax enable
 set showcmd
 set encoding=utf-8
 set showmatch
