@@ -19,13 +19,12 @@ binds {
     Alt+F4 { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    // Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    //Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     //Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
    
-    Mod+M { spawn "/home/owl/.config/niri/toggle-touchpad.sh"; }    
     Mod+N { spawn "notify-send \"test\""; }
 
     // Custom Application Shortcuts

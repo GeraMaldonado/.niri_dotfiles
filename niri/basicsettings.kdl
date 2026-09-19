@@ -6,14 +6,14 @@ overview {
 
 animations {
   on
-  slowdown 1.0
+  slowdown 1.5
 }
 
 layout {
   shadow {
     off
   }
-  gaps 8
+  gaps 5
   center-focused-column "never"
 
   struts {
@@ -55,6 +55,15 @@ window-rule {
   geometry-corner-radius 8 
   clip-to-geometry true
   draw-border-with-background false
+  opacity 0.9
+  background-effect {
+    blur true
+  }
+}
+
+layer-rule {
+    match namespace="^noctalia-backdrop"
+    place-within-backdrop true
 }
 
 input {
